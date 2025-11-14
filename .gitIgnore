@@ -221,4 +221,4 @@ __marimo__/
 ### ^^^ template from https://github.com/github/gitignore/blob/main/Python.gitignore ^^^
 ###
 
-secrets/*
+weather_api_key.py
