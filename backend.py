@@ -23,9 +23,9 @@ def process_current(current: ET.Element) -> tuple[str, str, str, ET.Element]:
     return current.find("condition/text").text, current.find("condition/code").text, current.find("temp_c").text, current.find("air_quality")
 
 
-def calc_aqi_level(concentration, intervals) -> str:
+def calc_aqi_level(concentration, intervals) -> int: # changed output from type str to int
     for interval_level, interval_max in intervals:
-        if concentration <= str(interval_max):
+        if float(concentration) <= interval_max: # Cast concentration to float for comparison
             return interval_level
     return 7
 
