@@ -221,5 +221,5 @@ __marimo__/
 ### ^^^ template from https://github.com/github/gitignore/blob/main/Python.gitignore ^^^
 ###
 
-weather_api_key.py
+api_key.py
 .vscode/*

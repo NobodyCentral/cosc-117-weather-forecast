@@ -1,7 +1,7 @@
 import requests
 from xml.etree import ElementTree as ET
 from datetime import date, timedelta
-from weather_api_key import API_KEY
+from api_key import API_KEY
 from config import CITY,WEATHER_EMOJI, POLLUTANTS, AQI_INTERVALS, INTERVAL_DESC
 
 yesterday_string = (date.today()-timedelta(1)).strftime('%Y-%m-%d')
