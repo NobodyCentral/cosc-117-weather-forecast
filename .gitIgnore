@@ -222,3 +222,4 @@ __marimo__/
 ###
 
 weather_api_key.py
+.vscode/*
